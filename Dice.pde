@@ -16,6 +16,7 @@ void draw()
 			one.show();
 		}
 	}
+
 }
 void mousePressed()
 {
@@ -29,14 +30,10 @@ class Die //models one single dice cube
 	{
 		myX = x;
 		myY = y;
-		rollCount = 0;
 	}
 	void roll()
 	{
 		rollNum = ((int)(Math.random()*6)+1);
-		//rollCount = rollCount + rollNum;
-		//fill(0);
-		//text("Sum: "+ rollCount, 150, 150);
 	}
 	void show()
 	{
@@ -87,5 +84,11 @@ class Die //models one single dice cube
 			ellipse(myX+15, myY+15, 5, 5);
 
 		}
+		/*
+		fill(0);
+		while (myX < 280) {
+			rollCount = rollCount + rollNum;
+		}
+		text(rollCount, 50, 50); */
 	}
 }
